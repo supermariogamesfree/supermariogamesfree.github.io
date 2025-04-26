@@ -1,5 +1,1 @@
-
-function oyunAc() {
-    alert("Oyun açılıyor...");
-    // Gerçek oyunu buraya yönlendirebilirsiniz
-}
+// You can add dynamic features here if needed in the future.

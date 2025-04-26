@@ -1,188 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OvO Game Online</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-    }
-    header {
-      background-color: #202020;
-      color: white;
-      padding: 1rem;
-      font-size: 2rem;
-    }
-    .thumbnail-container {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 1rem;
-      margin: 2rem;
-      justify-items: center;
-    }
-    .thumbnail {
-      width: 100px;
-      height: 100px;
-      overflow: hidden;
-      border-radius: 12px;
-      border: 4px solid #202020;
-      transition: transform 0.3s;
-      cursor: pointer;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .thumbnail img {
-      width: 90%;
-      height: 90%;
-      object-fit: cover;
-    }
-    .thumbnail:hover {
-      transform: scale(1.1);
-    }
-    .game-container {
-      margin: 2rem auto;
-      width: 90%;
-      max-width: 900px;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    }
-    .rating-section, .comment-section {
-      background-color: white;
-      margin: 2rem auto;
-      padding: 1rem;
-      border-radius: 12px;
-      width: 90%;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .stars {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    .stars span {
-      color: gray;
-    }
-    .stars span.selected {
-      color: gold;
-    }
-    textarea {
-      width: 100%;
-      height: 100px;
-      margin-top: 1rem;
-      padding: 0.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      background-color: #202020;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #404040;
-    }
-    @media(max-width: 768px) {
-      .thumbnail-container {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
-  <script>
-    function loadGame(url) {
-      document.getElementById('gameframe').src = url;
-    }
-
-    function selectStar(index) {
-      const stars = document.querySelectorAll('.stars span');
-      stars.forEach((star, i) => {
-        if (i <= index) {
-          star.classList.add('selected');
-        } else {
-          star.classList.remove('selected');
-        }
-      });
-    }
-
-    function submitComment() {
-      const comment = document.getElementById('comment').value;
-      if(comment.trim() !== "") {
-        alert('Yorumun gönderildi: ' + comment);
-        document.getElementById('comment').value = "";
-      } else {
-        alert('Lütfen bir yorum yazın.');
-      }
-    }
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Browser Games</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>OvO Game Online</header>
+  <header>
+    <h1>Popular Browser Games</h1>
+    <p>Discover and play some of the most popular browser games right here!</p>
+  </header>
 
-  <div class="thumbnail-container">
-    <div class="thumbnail" onclick="loadGame('https://ovo-unblocked.github.io/games/ovo/index.html')">
-      <img src="https://ovo-unblocked.github.io/assets/img/ovo-icon.png" alt="OvO">
+  <section class="games-section">
+    <h2>Popular Games</h2>
+    <div class="game-list">
+      <div class="game-item">
+        <img src="https://via.placeholder.com/150" alt="Subway Surfers">
+        <h3><a href="https://github.com/ShashwatNigam99/Subway-Surfers">Subway Surfers</a></h3>
+      </div>
+      <div class="game-item">
+        <img src="https://via.placeholder.com/150" alt="Slope">
+        <h3><a href="https://github.com/Bigfoot9999/Slope-Game">Slope</a></h3>
+      </div>
+      <div class="game-item">
+        <img src="https://via.placeholder.com/150" alt="Soccer Random">
+        <h3><a href="https://github.com/Unblocked-Games-786/Soccer-Random">Soccer Random</a></h3>
+      </div>
     </div>
-    <div class="thumbnail" onclick="loadGame('https://slope-game.github.io/slope/')">
-      <img src="https://i.imgur.com/FhpiyYv.png" alt="Slope">
-    </div>
-    <div class="thumbnail" onclick="loadGame('https://run3unblocked.github.io/run3/')">
-      <img src="https://i.imgur.com/U4xWguP.png" alt="Run 3">
-    </div>
-    <div class="thumbnail" onclick="loadGame('https://vex6.github.io/')">
-      <img src="https://i.imgur.com/GVRWsz7.png" alt="Vex 6">
-    </div>
-    <div class="thumbnail" onclick="loadGame('https://tunnelrush.github.io/')">
-      <img src="https://i.imgur.com/bB9JXg6.png" alt="Tunnel Rush">
-    </div>
-    <div class="thumbnail" onclick="loadGame('https://1v1lolunblocked.github.io/')">
-      <img src="https://i.imgur.com/ZMPDKNH.png" alt="1v1.lol">
-    </div>
-    <div class="thumbnail" onclick="loadGame('https://stickmanhook.github.io/')">
-      <img src="https://i.imgur.com/Cyl0zqG.png" alt="Stickman Hook">
-    </div>
-  </div>
+  </section>
 
-  <div class="game-container">
-    <iframe id="gameframe" src="https://ovo-unblocked.github.io/games/ovo/index.html" allowfullscreen></iframe>
-  </div>
+  <footer>
+    <p>&copy; 2025 Popular Browser Games. All rights reserved.</p>
+  </footer>
 
-  <div class="rating-section">
-    <h3>Bu Oyunu Puanla</h3>
-    <div class="stars">
-      <span onclick="selectStar(0)">&#9733;</span>
-      <span onclick="selectStar(1)">&#9733;</span>
-      <span onclick="selectStar(2)">&#9733;</span>
-      <span onclick="selectStar(3)">&#9733;</span>
-      <span onclick="selectStar(4)">&#9733;</span>
-    </div>
-  </div>
-
-  <div class="comment-section">
-    <h3>Yorum Yap</h3>
-    <textarea id="comment" placeholder="Yorumunuzu buraya yazın..."></textarea>
-    <br>
-    <button onclick="submitComment()">Gönder</button>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
