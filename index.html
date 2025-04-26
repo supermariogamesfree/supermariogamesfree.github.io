@@ -1,39 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popular Browser Games</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Play free online games including Subway Surfers, Slope, Soccer Random and more!">
+  <title>Free Online Games</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header>
-    <h1>Popular Browser Games</h1>
-    <p>Discover and play some of the most popular browser games right here!</p>
+    <h1>Free Online Games</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Popular Games</a></li>
+        <li><a href="#">Most Played</a></li>
+        <li><a href="#">New Games</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <section class="games-section">
-    <h2>Popular Games</h2>
-    <div class="game-list">
-      <div class="game-item">
-        <img src="https://via.placeholder.com/150" alt="Subway Surfers">
-        <h3><a href="https://github.com/ShashwatNigam99/Subway-Surfers">Subway Surfers</a></h3>
+  <main>
+    <section class="games-list">
+      <!-- Oyun listesi buraya gelecek -->
+      <div class="game-card">
+        <a href="game/subway-surfers.html">
+          <img src="assets/images/subway-surfers.png" alt="Subway Surfers" loading="lazy">
+          <h2>Subway Surfers</h2>
+        </a>
       </div>
-      <div class="game-item">
-        <img src="https://via.placeholder.com/150" alt="Slope">
-        <h3><a href="https://github.com/Bigfoot9999/Slope-Game">Slope</a></h3>
+      <div class="game-card">
+        <a href="game/slope.html">
+          <img src="assets/images/slope.png" alt="Slope" loading="lazy">
+          <h2>Slope</h2>
+        </a>
       </div>
-      <div class="game-item">
-        <img src="https://via.placeholder.com/150" alt="Soccer Random">
-        <h3><a href="https://github.com/Unblocked-Games-786/Soccer-Random">Soccer Random</a></h3>
-      </div>
-    </div>
-  </section>
-
+      <!-- Diğer oyunlar aynı şekilde -->
+    </section>
+  </main>
   <footer>
-    <p>&copy; 2025 Popular Browser Games. All rights reserved.</p>
+    <h2>Play Free Online Games</h2>
+    <p>Enjoy a huge selection of free online games including action games, racing games, sports games and more. All games are unblocked and free to play!</p>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
