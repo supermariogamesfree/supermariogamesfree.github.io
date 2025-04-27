@@ -4,89 +4,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Play free online games including Subway Surfers, Slope, Soccer Random and more!">
-  <title>Free Online Games</title>
-  <link rel="stylesheet" href="/styles.css">
+  <title>Super Mario Games - Play Classic Mario Adventures Online</title>
+  <meta name="description" content="Play a wide variety of Super Mario games including classic and modern titles. Jump through exciting adventures, rescue Princess Peach, and enjoy Mario's fun-filled world!">
+  
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #ff6ec7, #f7e9a1, #58c7e3, #f7aef8);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    /* Gradient animation */
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Header and Navigation */
+    header {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #f7e9a1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background-color: #ff6ec7;
+      color: #fff;
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(255, 106, 199, 0.6);
+    }
+
+    /* Main Content */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* Styling for links (if any) */
+    a {
+      color: #f7e9a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff6ec7;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header with navigation menu -->
   <header>
-    <h1>Free Online Games</h1>
     <nav>
-      <ul>
-        <li><a href="#">Popular Games</a></li>
-        <li><a href="#">Most Played</a></li>
-        <li><a href="#">New Games</a></li>
-      </ul>
+      <a href="#">Popular Games</a>
+      <a href="#">New Games</a>
+      <a href="#">Random Games</a>
+      <a href="#">All Games</a>
+      <a href="#">Rating Games</a>
     </nav>
   </header>
-  <main>
-    <section class="games-list">
-      <div class="game-card">
-        <a href="subway-surfers.html">
-          <img src="assets/images/subway-surfers.png" alt="Subway Surfers" loading="lazy">
-          <h2>Subway Surfers</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/slope.html">
-          <img src="assets/images/slope.png" alt="Slope" loading="lazy">
-          <h2>Slope</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/soccer-random.html">
-          <img src="assets/images/soccer-random.png" alt="Soccer Random" loading="lazy">
-          <h2>Soccer Random</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/tunnel-rush.html">
-          <img src="assets/images/tunnel-rush.png" alt="Tunnel Rush" loading="lazy">
-          <h2>Tunnel Rush</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/stickman-hook.html">
-          <img src="assets/images/stickman-hook.png" alt="Stickman Hook" loading="lazy">
-          <h2>Stickman Hook</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/moto-x3m.html">
-          <img src="assets/images/moto-x3m.png" alt="Moto X3M" loading="lazy">
-          <h2>Moto X3M</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/drift-hunters.html">
-          <img src="assets/images/drift-hunters.png" alt="Drift Hunters" loading="lazy">
-          <h2>Drift Hunters</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/basketball-stars.html">
-          <img src="assets/images/basketball-stars.png" alt="Basketball Stars" loading="lazy">
-          <h2>Basketball Stars</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/temple-run-2.html">
-          <img src="assets/images/temple-run-2.png" alt="Temple Run 2" loading="lazy">
-          <h2>Temple Run 2</h2>
-        </a>
-      </div>
-      <div class="game-card">
-        <a href="game/among-us.html">
-          <img src="assets/images/among-us.png" alt="Among Us" loading="lazy">
-          <h2>Among Us</h2>
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <h2>Play Free Online Games</h2>
-    <p>Enjoy a huge selection of free online games including action games, racing games, sports games and more. All games are unblocked and free to play!</p>
-  </footer>
-  <script src="/main.js"></script>
+
+  <!-- Main Content -->
+  <h1>Welcome to the Super Mario Games World!</h1>
+  <p>Play a wide variety of Super Mario games online for free. Experience the iconic Mario adventures, from classic games to modern versions, all in one place.</p>
+
+  <h2>Explore Our Collection of Super Mario Games</h2>
+  <p>From Super Mario Bros. to Mario Kart, we have the best selection of Mario games that cater to both nostalgic players and new fans alike. Jump, run, and race through Mario’s vibrant world.</p>
+  
 </body>
 </html>
