@@ -134,6 +134,18 @@ h1, h2 {
 .game-image:hover img {
     transform: scale(1.05); /* Resmi büyütme efekti */
 }
+.super-mario-logo {
+  font-family: 'Comic Sans MS', 'Arial Black', cursive;
+  font-size: 48px;
+  text-align: center;
+  color: #ff0000; /* Kırmızı ana renk */
+  text-shadow: 
+    2px 2px 0 #00ff00,
+    4px 4px 0 #0000ff,
+    6px 6px 0 #ffff00;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
 #comment-list {
     margin-top: 20px;
     list-style: none;
