@@ -94,6 +94,37 @@
       font-size: 1.5rem;
       padding: 10px 0;
     }
+    .logo {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(145deg, #ff0000, #ff9900); /* Kırmızıdan turuncuya geçiş */
+  color: #fff700; /* Altın sarısı yazı */
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 220px; /* Dikey ortalama */
+  border-radius: 50%; /* Tam yuvarlak */
+  border: 6px solid #00ff00; /* Yeşil kenarlık */
+  box-shadow: 
+    0 8px 15px rgba(0, 0, 0, 0.5), /* Gölge */
+    0 0 15px #00ffff inset, /* İç parlama */
+    0 0 25px #ffff00; /* Dış parlama */
+  margin: 20px auto;
+  transition: 0.4s;
+  position: relative;
+}
+
+/* Hover efekti: döner, parlaklaşır */
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 
+    0 12px 20px rgba(0, 0, 0, 0.6),
+    0 0 20px #ff00ff inset,
+    0 0 35px #00ffff;
+}
+
+/* Alt
   </style>
 </head>
 <body>
