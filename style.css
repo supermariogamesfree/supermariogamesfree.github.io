@@ -13,6 +13,22 @@ header {
     text-align: center;
 }
 
+.haftanin-oyunlari {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  background: linear-gradient(to top, #00c3ff 0%, #ffff1c 100%);
+  background-size: cover;
+  animation: renkDegistir 10s infinite alternate;
+}
+
+@keyframes renkDegistir {
+  0% { background: linear-gradient(to top, #00c3ff 0%, #ffff1c 100%); }
+  50% { background: linear-gradient(to top, #ff7b00 0%, #ffef00 100%); }
+  100% { background: linear-gradient(to top, #00c3ff 0%, #ffff1c 100%); }
+}
+
 header nav a {
     color: #fff;
     margin: 0 15px;
