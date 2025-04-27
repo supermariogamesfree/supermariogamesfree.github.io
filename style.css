@@ -158,3 +158,24 @@ h1, h2 {
     padding: 10px;
     border-radius: 5px;
 }
+.logo {
+  width: 200px;
+  height: 200px;
+  background: #ff0000; /* Kırmızı zemin */
+  color: white;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px; /* Dikey ortalama */
+  border-radius: 50%; /* Yuvarlak yapmak için */
+  border: 5px solid #00ff00; /* Yeşil kenarlık */
+  box-shadow: 0 0 20px #ffff00; /* Sarı parlama */
+  margin: 20px auto;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 0 30px #00ffff;
+}
