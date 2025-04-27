@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+/* Game Page Styles */
+.game-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.game-iframe-container {
+    margin: 20px 0;
+}
+
+.rating {
+    margin: 20px 0;
+}
+
+.stars {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.stars span {
+    color: #f39c12;
+    padding: 5px;
+}
+
+.stars span:hover {
+    color: #e67e22;
+}
+
+.fullscreen-button {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Similar Games */
+.similar-games ul {
+    list-style: none;
+    padding: 0;
+}
+
+.similar-games li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.similar-games a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.similar-games a:hover {
+    text-decoration: underline;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 30px;
+}
+
+#comment-box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#comment-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#comment-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
