@@ -1,20 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Mario Bros - Play the Classic Mario Adventure Online</title>
-  <meta name="description" content="Play Super Mario Bros online for free! Jump through levels, avoid enemies, and save Princess Peach in this classic Nintendo adventure. Experience the nostalgia of the iconic Mario game!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play classic Super Mario and other exciting games online. Rate, comment, and enjoy a wide range of games in our collection.">
+    <meta name="keywords" content="Super Mario, classic games, online games, play games, gaming platform, game rating, Mario Kart, Super Mario Bros">
+    <title>Super Mario & Classic Games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Play Super Mario Bros Online</h1>
-  <p>Enjoy the classic adventure of Super Mario Bros. Navigate through levels, avoid Goombas, and defeat Bowser to rescue Princess Peach!</p>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Popular Games</a>
+            <a href="#">New Games</a>
+            <a href="#">Random Games</a>
+            <a href="#">Rating Games</a>
+        </nav>
+    </header>
 
-  <h2>How to Play Super Mario Bros</h2>
-  <p>Super Mario Bros is a platform game where you control Mario through various levels, overcoming obstacles and enemies. Collect power-ups to make your journey easier and reach new heights.</p>
+    <section class="game-page">
+        <div class="game-container">
+            <h1 id="game-title">Super Mario Bros</h1>
+            <div class="game-iframe-container">
+                <iframe src="your-game-url" id="game-iframe" width="600" height="400" allowfullscreen></iframe>
+            </div>
 
-  <h2>Why Super Mario Bros is Timeless</h2>
-  <p>Released in 1985, Super Mario Bros revolutionized platform games and remains one of the most beloved games in history. It’s a great combination of easy-to-understand mechanics and challenging levels, perfect for both beginners and seasoned players.</p>
+            <div class="rating">
+                <h2>Rate This Game</h2>
+                <div class="stars">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                <p>Your rating: <span id="user-rating">0</span></p>
+            </div>
+
+            <div class="game-description">
+                <h2>Game Description</h2>
+                <p>This game, Super Mario Bros, is a legendary adventure that started the Mario series. Mario, the plumber, is on a quest to save Princess Peach from Bowser’s evil clutches. This game is known for its tight controls, creative levels, and groundbreaking gameplay that revolutionized platformers.</p>
+            </div>
+
+            <div class="fullscreen-button">
+                <button id="fullscreen-toggle">Go Fullscreen</button>
+            </div>
+
+            <div class="similar-games">
+                <h2>Similar Games</h2>
+                <ul>
+                    <li><a href="#">Super Mario Kart</a></li>
+                    <li><a href="#">Super Mario World</a></li>
+                    <li><a href="#">Donkey Kong</a></li>
+                    <li><a href="#">Tetris</a></li>
+                    <li><a href="#">Pokémon Red</a></li>
+                </ul>
+            </div>
+
+            <div class="comments-section">
+                <h2>Comments</h2>
+                <textarea id="comment-box" placeholder="Leave a comment..."></textarea>
+                <button onclick="submitComment()">Submit</button>
+                <ul id="comment-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Super Mario & Classic Games. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
