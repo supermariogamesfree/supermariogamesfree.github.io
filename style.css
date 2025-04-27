@@ -98,7 +98,42 @@ h1, h2 {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+/* Ana sayfa için oyun resimlerinin genel düzeni */
+.game-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Masaüstü için 5 sütun */
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 1200px; /* Maksimum genişlik */
+}
 
+/* Mobilde 2 oyun resmi yan yana */
+@media (max-width: 768px) {
+    .game-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 sütun yan yana */
+    }
+}
+
+/* Tablet ve daha büyük ekranlar için düzenlemeler */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .game-images {
+        grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+    }
+}
+
+/* Oyun resmi stilini iyileştirme */
+.game-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Oyun resmine hover efekti */
+.game-image:hover img {
+    transform: scale(1.05); /* Resmi büyütme efekti */
+}
 #comment-list {
     margin-top: 20px;
     list-style: none;
