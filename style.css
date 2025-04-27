@@ -46,41 +46,25 @@ h1, h2 {
     margin: 20px 0;
 }
 
-.rating {
-    margin: 20px 0;
-}
-
+/* Yıldızlar için stil */
 .stars {
     font-size: 30px;
     cursor: pointer;
+    color: #ccc;  /* Başlangıçta gri yıldızlar */
 }
 
 .stars span {
-    color: #f39c12;
     padding: 5px;
+    transition: color 0.2s;  /* Yumuşak geçiş efekti */
+}
+
+.stars span.active {
+    color: #f39c12;  /* Tıklanan yıldız sarı olacak */
 }
 
 .stars span:hover {
-    color: #e67e22;
+    color: #e67e22;  /* Hover rengi turuncu */
 }
-
-.fullscreen-button {
-    margin: 20px 0;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #f39c12;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #e67e22;
-}
-
 /* Similar Games */
 .similar-games ul {
     list-style: none;
