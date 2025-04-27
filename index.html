@@ -1,52 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Mario Games - Play Classic Mario Adventures Online</title>
-  <meta name="description" content="Play a wide variety of Super Mario games including classic and modern titles. Jump through exciting adventures, rescue Princess Peach, and enjoy Mario's fun-filled world!">
-  
+  <title>Super Mario & Classic Games - Play Online</title>
+  <meta name="description" content="Play a wide variety of classic Mario and other games online for free. Enjoy retro adventures, puzzles, and action-packed gameplay!">
+
   <style>
-    /* Global Styles */
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(45deg, #ff6ec7, #f7e9a1, #58c7e3, #f7aef8);
       background-size: 400% 400%;
       animation: gradientAnimation 10s ease infinite;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      margin: 0;
       color: white;
       text-align: center;
     }
 
-    /* Gradient animation */
     @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
-    /* Header and Navigation */
     header {
       width: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       padding: 20px 0;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
     }
 
     nav {
@@ -72,40 +53,51 @@
       box-shadow: 0 4px 10px rgba(255, 106, 199, 0.6);
     }
 
-    /* Main Content */
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    .games-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 50px;
+      padding: 20px;
     }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    .game-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      background: #fff;
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
 
-    p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      line-height: 1.6;
+    .game-card img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
     }
 
-    /* Styling for links (if any) */
-    a {
-      color: #f7e9a1;
-      text-decoration: none;
-      font-weight: bold;
+    .game-card:hover {
+      transform: scale(1.1);
     }
 
-    a:hover {
-      color: #ff6ec7;
+    .game-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .game-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 1.5rem;
+      padding: 10px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with navigation menu -->
   <header>
     <nav>
       <a href="#">Popular Games</a>
@@ -116,12 +108,92 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <h1>Welcome to the Super Mario Games World!</h1>
-  <p>Play a wide variety of Super Mario games online for free. Experience the iconic Mario adventures, from classic games to modern versions, all in one place.</p>
+  <h1>Explore Classic Games</h1>
+  <p>Play your favorite Super Mario games and other legendary classics online for free!</p>
 
-  <h2>Explore Our Collection of Super Mario Games</h2>
-  <p>From Super Mario Bros. to Mario Kart, we have the best selection of Mario games that cater to both nostalgic players and new fans alike. Jump, run, and race through Mario’s vibrant world.</p>
-  
+  <!-- Games Section -->
+  <div class="games-container">
+    <!-- Game 1: Super Mario Bros -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-1" target="_blank">
+        <img src="https://github.com/path-to-game-image-1.png" alt="Super Mario Bros">
+        <div class="game-title">Super Mario Bros</div>
+      </a>
+    </div>
+
+    <!-- Game 2: Super Mario Kart -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-2" target="_blank">
+        <img src="https://github.com/path-to-game-image-2.png" alt="Super Mario Kart">
+        <div class="game-title">Super Mario Kart</div>
+      </a>
+    </div>
+
+    <!-- Game 3: Super Mario Odyssey -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-3" target="_blank">
+        <img src="https://github.com/path-to-game-image-3.png" alt="Super Mario Odyssey">
+        <div class="game-title">Super Mario Odyssey</div>
+      </a>
+    </div>
+
+    <!-- Game 4: Super Mario World -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-4" target="_blank">
+        <img src="https://github.com/path-to-game-image-4.png" alt="Super Mario World">
+        <div class="game-title">Super Mario World</div>
+      </a>
+    </div>
+
+    <!-- Game 5: Super Mario 64 -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-5" target="_blank">
+        <img src="https://github.com/path-to-game-image-5.png" alt="Super Mario 64">
+        <div class="game-title">Super Mario 64</div>
+      </a>
+    </div>
+
+    <!-- Game 6: Donkey Kong -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-6" target="_blank">
+        <img src="https://github.com/path-to-game-image-6.png" alt="Donkey Kong">
+        <div class="game-title">Donkey Kong</div>
+      </a>
+    </div>
+
+    <!-- Game 7: Luigi's Mansion -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-7" target="_blank">
+        <img src="https://github.com/path-to-game-image-7.png" alt="Luigi's Mansion">
+        <div class="game-title">Luigi's Mansion</div>
+      </a>
+    </div>
+
+    <!-- Game 8: Zelda: Breath of the Wild -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-8" target="_blank">
+        <img src="https://github.com/path-to-game-image-8.png" alt="Zelda: Breath of the Wild">
+        <div class="game-title">Zelda: Breath of the Wild</div>
+      </a>
+    </div>
+
+    <!-- Game 9: Pokémon Red/Blue -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-9" target="_blank">
+        <img src="https://github.com/path-to-game-image-9.png" alt="Pokémon Red/Blue">
+        <div class="game-title">Pokémon Red/Blue</div>
+      </a>
+    </div>
+
+    <!-- Game 10: Tetris -->
+    <div class="game-card">
+      <a href="https://github.com/path-to-game-10" target="_blank">
+        <img src="https://github.com/path-to-game-image-10.png" alt="Tetris">
+        <div class="game-title">Tetris</div>
+      </a>
+    </div>
+
+  </div>
+
 </body>
 </html>
